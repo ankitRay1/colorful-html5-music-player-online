@@ -23,7 +23,6 @@ Table of Contents
 7.  [Supported Methods](#methods)
 8.  [Special Characters](#special)
 9. [Sources and Credits](#credits)
-11. [History](#history)
 
 * * * * *
 
@@ -63,7 +62,6 @@ try accessing it locally it simply won't work.
     -   robots.txt *And a standard file for crawlers.*
     -   index.php *The main demo page. Run this on a webserver to see it
         working!*
--   docs *This userguide!*
 
 If you want to kickstart your work, just copy the css, js, swf, and
 utils folder and you're ready to go. Arrange the DOM and initialize the
