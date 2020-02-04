@@ -1,0 +1,25 @@
+# shorten links for any php file
+Options +FollowSymLinks -MultiViews
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-fW
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]+\ /([^/]+/)*[^.#?\ ]+\.php([#?][^\ ]*)?\ HTTP/
+
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{HTTP:Accept-encoding} gzip
+	RewriteCond %{REQUEST_FILENAME}.gz -f
+	RewriteRule ^(.*)$ /$1.gz [QSA,L]
+	<FilesMatch \.css\.gz$>
+		ForceType text/css
+	</FilesMatch>
+	<FilesMatch \.js\.gz$>
+		ForceType application/javascript
+	</FilesMatch>
+</IfModule>
+<IfModule mod_mime.c>
+	AddEncoding gzip .gz
+</IfModule>
