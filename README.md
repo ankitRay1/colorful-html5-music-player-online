@@ -19,9 +19,8 @@ Table of Contents
 5.  [Initializing](#init)
 6.  [JSON Options](#json)
 7.  [Supported Methods](#methods)
-8.  [SoundCloud API](#soundcloud) *(How to get the Client ID)*
-9.  [Special Characters](#special)
-10. [Sources and Credits](#credits)
+8.  [Special Characters](#special)
+9. [Sources and Credits](#credits)
 11. [History](#history)
 
 * * * * *
