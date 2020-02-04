@@ -2,14 +2,14 @@
 
 * * * * *
 
-“ HTML5 Audio Player” {.center}
-=========================
+  “ HTML5 Audio Player” 
+ =========================
 
 
 
 * * * * *
 
-Table of Contents {#toc .alt}
+Table of Contents 
 -----------------
 
 1.  [Introduction](#introduction)
