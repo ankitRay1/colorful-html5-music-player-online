@@ -54,9 +54,6 @@ try accessing it locally it simply won't work.
     -   swf *This folder is used by SoundManager2 and summons the Flash
         Player APIs needed for the Equalizer to work. Whenever Flash
         fails HTML5 will be used. Keep it.*
-    -   utils *Contains a php script which translates the Soundcloud
-        songs to a real url so the player can animate properly the sound
-        wave and resume it without issues.*
     -   .htaccess *This is reccomended to be used as it enables you to
         gzip your scripts and allows you to have shorturls. You can just
         skip it. It's not needed.*
@@ -159,8 +156,7 @@ stylesheet in your head you have to include the following javascript
 files before the end of the body:
 
     <script src="js/jquery.min.js"></script>
-      
-    <script src="http://connect.soundcloud.com/sdk.js"></script>
+     
 
     <script src="js/jquery.gearplayer.libs.min.js"></script>
     <script src="js/jquery.gearplayer.min.js"></script>
@@ -169,10 +165,6 @@ You should at first include jQuery if you don't have already. The
 included version includes Sizzle as CSS selector engine and is provided
 with Foundation, though you can use any flavour of jQuery as you like as
 long you include it **before** the Audio Player scripts.
-
-The SoundCloud javascript is needed only if you're planning to use
-SoundCloud for your music. You can remove it safely if you don't need
-this feature. We'll see later how to benefit from their APIs.
 
 The last two files are mandatory: the first one is a collection of the
 following libraries: Modernizr, PreloadJS, Greensock, Raphael.js, jQuery
@@ -225,10 +217,7 @@ I'll briefly explain each one here so you can play safely.
 -   **albumTitle** *The title of the album which will shown near the
     artwork.*
 -   **albumAuthor** *Displays the author name right below the title.*
--   **soundCloudEnabled** *This flag enabled the SoundCloud routine. If
-    you're planning to use this service, set it to "true". If not set it
-    to "false".*
-
+- 
 -   **autoPlay** *When set to "true" will launch the first song without
     user input, but only on desktop. It won't fire on mobile due native
     restrictions, though the miniplayer will pop out for interaction. If
@@ -386,9 +375,6 @@ The following icons were used:
 -   Foundation Icon Fonts 3 by ZURB
     [zurb.com/playground/foundation-icon-fonts-3](http://zurb.com/playground/foundation-icon-fonts-3)
 
-Included photos courtesy of Envato Asset Library.
-
-* * * * *
 
 
 Once again, thank you so much for downloading this app code. As I said at the
